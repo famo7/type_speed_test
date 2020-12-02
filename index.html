@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<!--
+Farhan Mohamed
+famo1901
+famo1901@student.miun.se
+-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TypingStats</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js"></script>
+</head>
+<body>
+<header>
+    <!-- logo image and text.-->
+    <img src="img/logo.png" alt="logo image" id="logo">
+    <h1 id="header-label">TypingStats</h1>
+</header>
+<main>
+    <!-- Main contains 3 sections.-->
+
+    <!-- Section containing 2 sections settings and text to choose.-->
+    <section id="setting-text" class="clear-float">
+        <!-- section containing checkbox for casting and language settings.-->
+
+        <section id="settings" class="floated">
+            <input type="checkbox" id="casting" name="casting">
+            <label for="casting">Ignore casting</label><br>
+
+            <input type="radio" id="english" name="language" value="english">
+            <label for="english">english</label>
+            <input type="radio" id="swedish" name="language" value="swedish">
+            <label for="swedish">swedish</label>
+        </section>
+        <!-- Section containing text to choose with select and options from js.-->
+        <section id="text-options" class="floated">
+            <p>choose text</p>
+            <label for="text"></label>
+            <select id="text">
+
+            </select>
+        </section>
+    </section>
+    <section>
+        <!-- Section containing non editable div for the text,
+             input to type and button for play/stop.-->
+        <div contenteditable="false" id="div-content"></div>
+        <label for="text-type"></label>
+        <input type="text" id="text-type" placeholder="Type here."><br>
+
+        <button id="state-button"><img id="state" src="img/play.png"
+                                       alt="Game state buttons"></button>
+    </section>
+    <!-- Section to to display the stats using 2 paragraphs and spans..-->
+    <section id="stats">
+
+        <p>Gross WPM: <span id="gross-wpm">0</span>
+            <span class="tab">Accuracy:</span> <span id="acc">0</span></p>
+        <p>Net WPM: <span id="net-wpm">0</span>
+            <span class="tab">Errors:</span> <span id="errors">0</span></p>
+    </section>
+</main>
+<footer>
+    <!-- Footer containing copyright and contact.-->
+    <p>copyright &copy; 2020 Farhan Mohamed.</p>
+    <address id="contact-element">
+        <a href="mailto:famo1901@student.miun.se">
+            contact me.</a>
+    </address>
+</footer>
+</body>
+</html>

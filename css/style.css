@@ -1,0 +1,189 @@
+/*including imported font from google fonts.*/
+@font-face {
+    src: local("font/RobotoMono-Light.ttf");
+    font-family: Mon;
+}
+
+/*including imported font from google fonts.*/
+
+@font-face {
+    src: local("font/PlayfairDisplay-Regular.ttf");
+    font-family: playF;
+}
+
+
+/* reseting default values of browser for
+    * margin, padding and box-sizing so border
+    * and padding are included for the elements
+    * width and height.
+    */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*html height covers the whole page*/
+
+html {
+    background-image: url("../img/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 100%;
+    width: 100%;
+}
+
+/*body width is fixed 600px and text is aligned*/
+
+body {
+    font-size: 18px;
+    text-align: center;
+    font-family: sans-serif;
+    background-color: #ffffff;
+    width: 600px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+/*styling header and giving background color*/
+
+header {
+    height: 150px;
+    background-color: #5995DA;
+    width: 100%;
+}
+
+/*animate using keyframe named rot with duration and infinitely*/
+
+#header-label {
+    color: rgba(55, 48, 48, 0.73);
+    animation-name: rot;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rot {
+    /*Rotate 180 degrees aprox and color is the same*/
+    from {
+        transform: rotateX(3.142rad);
+        color: rgba(10, 18, 18, 0.73);
+    }
+    to {
+        transform: rotateX(0);
+        /*Rotate 0 degrees aprox and color is changed*/
+        color: rgba(55, 48, 48, 0.73);
+    }
+}
+
+main {
+    width: 100%;
+}
+
+/*class for clearing floats using the parent element*/
+
+.clear-float {
+    overflow: hidden;
+}
+
+
+/*class for flaoting left side by side, 2 elements*/
+
+.floated {
+    width: 50%;
+    float: left;
+    margin: 10px 0;
+}
+
+#settings, #text-options {
+    margin-top: 20px;
+}
+
+#english {
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+/*styling div that contains the text.*/
+
+#div-content {
+    margin: 10px auto;
+    width: 80%;
+    height: 230px;
+    border: 2px solid #5995DA;
+    border-radius: 4px;
+    padding: 12px 20px;
+}
+
+/*font for p in the div.*/
+
+#div-content p {
+    font-family: Mon, serif;
+
+}
+
+/*font for h3 in the div.*/
+
+#div-content h3 {
+    font-family: playF, serif;
+
+}
+
+
+/*styling select.*/
+
+select {
+    background-color: #5995DA;
+    color: #ffffff;
+    height: 35px;
+}
+
+/*styling link for footer.*/
+
+a:link {
+    color: white;
+    padding: 14px 25px;
+    display: inline-block;
+}
+
+button {
+    margin-top: 10px;
+}
+
+input[type="text"] {
+    border: 1px solid #5995DA;
+    border-radius: 4px;
+    text-align: center;
+}
+
+/*class for spacing.*/
+
+.tab {
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+/*giving span stats a color.*/
+
+#errors, #net-wpm, #gross-wpm, #acc {
+    color: #5995DA;
+}
+
+#state-button {
+    border: none;
+}
+
+/*styling footer so its fixed bottom*/
+footer {
+    border-top: 1px solid black;
+    font-size: 14px;
+    position: fixed;
+    bottom: 0;
+    width: 600px;
+    height: 50px;
+    background-color: #5995DA;
+    color: white;
+    text-align: center;
+}
